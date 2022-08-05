@@ -18,26 +18,31 @@ public class StudentInfo {
         students.add(s4);
         students.add(s5);
 
-//        StudentInfo info = new StudentInfo();
-//        info.printStudentOverGrade(students, 8);
-//        System.out.println("----------------------------------");
-//        info.printStudentUnderAge(students, 30);
-//        System.out.println("**********************************");
-//        info.printStudentsMixCondition(students, 20, 9.9, 'f');
-
         StudentInfo1 info1 = new StudentInfo1();
-     //   info1.testStudent(students, new CheckOverGrade());
+
+        // тут у нас функциональный интерфейс
         info1.testStudent(students, new StudentCheck() {
             @Override
             public boolean check(Student s) {
                 return s.age < 30;
             }
         });
-        //написать остальные методы
-        //отсортировать при помощи Compartor<Student>**
+
+
         info1.testStudent(students, (Student s) -> {
             return s.age < 30;
         });
+
+        //printStudentUnderAge
+        info1.testStudent(students, s -> s.age < 30);
+
+        //printStudentOverGrade
+
+
+        //printStudentsMixCondition
+
+
+        //отсортировать при помощи Compartor<Student>**
     }
 
     void printStudentOverGrade(ArrayList<Student> list, double grade) {
