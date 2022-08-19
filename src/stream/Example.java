@@ -3,10 +3,10 @@ package stream;
 import java.util.Arrays;
 import java.util.stream.Stream;
 
+
 public class Example {
     // Streams: НЕ МЕНЯЮТ ИСТОЧНИК, НАЧИНАЕТ РАБОТАТЬ С ТЕРМИНАЛЬНОГО ОПЕРАТОРА.
     // СОЗДАЕМ СТРИМ - ЧЕ ТО ДЕЛАЕМ - ПРЕОБРАЗУЕМ В НУЖНЫЙ НАМ ТИП ДАННЫХ
-
     static int[] numbers = {32, 1, 45, 69, 870, 164, 238, 57, 104, 599, 59, 101,
                            2, 12, 121, 14, 4, 5, 6, 1, 45, 69, 870, 164, 238, 57};
 
