@@ -22,7 +22,6 @@ public class Test {
     //static вступает в интимную связь только с классом
     //non static вступает в интимную связь ТОЛЬКО с объектом
          public void getSmth(String... s) {
-        //kjhjgjgjhfjfjhgjh
 
          }
 
