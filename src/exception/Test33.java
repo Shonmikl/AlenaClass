@@ -28,16 +28,16 @@ public class Test33 {
         return message;
     }
 
-    public static int checkMaxAttendees(int level) {
-        int maxAttendees = 0;
-        switch (level) {
-            case 4 -> maxAttendees += 20;
-            case 2, 3 -> maxAttendees += 50;
-            case 1 -> maxAttendees += 100;
-            case 0 -> maxAttendees += 200;
-        }
-        return maxAttendees;
-    }
+//    public static int checkMaxAttendees(int level) {
+//        int maxAttendees = 0;
+//        switch (level) {
+//            case 4 -> maxAttendees += 20;
+//            case 2, 3 -> maxAttendees += 50;
+//            case 1 -> maxAttendees += 100;
+//            case 0 -> maxAttendees += 200;
+//        }
+//        return maxAttendees;
+
 
     public static boolean checkInput(String input) {
         return (input.equalsIgnoreCase("password"));
